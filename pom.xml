@@ -76,6 +76,7 @@
         <maven-surefire-plugin.version>2.22.1</maven-surefire-plugin.version>
         <maven-war-plugin.version>3.3.1</maven-war-plugin.version>
         <jacoco-maven-plugin>0.8.6</jacoco-maven-plugin>
+             
 
         <!-- Docker image -->
         <docker.jib-maven-plugin.version>2.6.0</docker.jib-maven-plugin.version>
@@ -186,6 +187,7 @@
             <version>${tomcat.version}</version>
             <scope>runtime</scope>
         </dependency>
+             
 
         <!-- Logging with SLF4J & LogBack -->
         <dependency>
@@ -337,7 +339,11 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
-
+         <plugin>
+                        <groupId>org.sonarsource.scanner.maven</groupId>
+                        <artifactId>sonar-maven-plugin</artifactId>
+                        <version>3.9.0.2155</version> <!-- Always check for the latest version -->
+                      </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-eclipse-plugin</artifactId>
