@@ -51,18 +51,8 @@
         <hsqldb.version>2.5.2</hsqldb.version>
         <h2database.version>1.4.200</h2database.version>
 
-        <distributionManagement>
-             <repository>
-                 <id>maven-releases</id>
-                 <!-- URL for the release repository -->
-                 <url>http://13.232.12.194:8081/repository/maven-releases/</url>
-             </repository>
-             <snapshotRepository>
-                 <id>maven-snapshots</id>
-                 <!-- URL for the snapshot repository (should be different from release) -->
-                 <url>http://13.232.12.194:8081/repository/maven-snapshots/</url>
-             </snapshotRepository>
-         </distributionManagement>
+
+
 
 
         <!-- Logging -->
