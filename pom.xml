@@ -52,17 +52,18 @@
         <h2database.version>1.4.200</h2database.version>
 
         <distributionManagement>
-            <repository>
-                <id>maven-releases</id>
-                <!-- CHANGE HERE by your team Nexus server -->
-                <url>http://13.232.12.194:8081/repository/maven-releases/</url>
-            </repository>
-            <snapshotRepository>
-                <id>maven-snapshots</id>
-                <!-- CHANGE HERE by your team Nexus server -->
-                <url>http://13.232.12.194:8081/repository/maven-releases/</url>
-            </snapshotRepository>
-        </distributionManagement>
+             <repository>
+                 <id>maven-releases</id>
+                 <!-- URL for the release repository -->
+                 <url>http://13.232.12.194:8081/repository/maven-releases/</url>
+             </repository>
+             <snapshotRepository>
+                 <id>maven-snapshots</id>
+                 <!-- URL for the snapshot repository (should be different from release) -->
+                 <url>http://13.232.12.194:8081/repository/maven-snapshots/</url>
+             </snapshotRepository>
+         </distributionManagement>
+
 
         <!-- Logging -->
         <slf4j.version>1.7.32</slf4j.version>
