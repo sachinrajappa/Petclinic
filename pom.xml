@@ -63,11 +63,7 @@
                 <url>http://13.232.12.194:8081/repository/maven-releases/</url>
             </snapshotRepository>
         </distributionManagement>
-             <repository>
-           <id>maven-releases</id>
-           <name>maven-releases</name>
-           <url>http://13.232.12.194:8081/repository/maven-releases/</url>
-         </repository>
+
         <!-- Logging -->
         <slf4j.version>1.7.32</slf4j.version>
         <logback.version>1.2.6</logback.version>
